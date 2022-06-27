@@ -1,0 +1,232 @@
+<html>
+  <head>
+    <title>Can you solve this easy challenge?</title>
+    <style>
+          * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: var(--main-font);
+      transition: 0.3s;
+    }
+
+    :root {
+      --bg-clr: #111;
+      --main-font: "Courier", monoscape;
+      --main-clr: blueviolet;
+    }
+
+    body {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      height: 100vh;
+      background: var(--bg-clr);
+      overflow: hidden;
+    }
+
+    div {
+      width: 100%;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    div p {
+      color: transparent;
+      -webkit-text-stroke: 2px #fff;
+      font-weight: bolder;
+      font-family: var(--main-font);
+      font-size: 50px;
+      position: relative;
+    }
+
+    div p::after {
+      content: "";
+      background: var(--main-clr);
+      width: 3px;
+      height: 150%;
+      position: absolute;
+      border-radius: 99px;
+      bottom: -25%;
+      left: 0;
+      animation: blink 1s linear infinite;
+    }
+
+    div p::before {
+      content: "Hover over me!";
+      text-align: center;
+      width: 100%;
+      height: 100%;
+      background: var(--bg-clr);
+      position: absolute;
+      letter-spacing: 0px;
+    }
+
+    div p:hover::after,
+    div p:hover::before {
+      animation: move 10s 1 forwards;
+    }
+
+    @keyframes move {
+      0% {
+        content: "";
+        transform: translateX(0);
+        opacity: 1;
+      }
+      3% {
+        content: "";
+        transform: translateX(calc((25 + 5) * 1px));
+        opacity: 1;
+      }
+      6% {
+        content: "";
+        transform: translateX(calc((50 + 5) * 1px));
+        opacity: 1;
+      }
+      9% {
+        content: "";
+        transform: translateX(calc((75 + 5) * 1px));
+        opacity: 1;
+      }
+      12% {
+        content: "";
+        transform: translateX(calc((100 + 5) * 1px));
+        opacity: 1;
+      }
+      15% {
+        content: "";
+        transform: translateX(calc((125 + 5) * 1px));
+        opacity: 1;
+      }
+      18% {
+        content: "";
+        transform: translateX(calc((150 + 5) * 1px));
+        opacity: 1;
+      }
+      21% {
+        content: "";
+        transform: translateX(calc((175 + 5) * 1px));
+        opacity: 1;
+      }
+      24% {
+        content: "";
+        transform: translateX(calc((200 + 5) * 1px));
+        opacity: 1;
+      }
+      27% {
+        content: "";
+        transform: translateX(calc((225 + 5) * 1px));
+        opacity: 1;
+      }
+      30% {
+        content: "";
+        transform: translateX(calc((250 + 5) * 1px));
+        opacity: 1;
+      }
+      33% {
+        content: "";
+        transform: translateX(calc((275 + 5) * 1px));
+        opacity: 1;
+      }
+      36% {
+        content: "";
+        transform: translateX(calc((300 + 5) * 1px));
+        opacity: 1;
+      }
+      39% {
+        content: "";
+        transform: translateX(calc((325 + 5) * 1px));
+        opacity: 1;
+      }
+      41% {
+        content: "";
+        transform: translateX(calc((350 + 5) * 1px));
+        opacity: 1;
+      }
+      44% {
+        content: "";
+        transform: translateX(calc((375 + 5) * 1px));
+        opacity: 1;
+      }
+      47% {
+        content: "";
+        transform: translateX(calc((425 + 5) * 1px));
+        opacity: 1;
+      }
+      50% {
+        content: "";
+        transform: translateX(calc((450 + 5) * 1px));
+        opacity: 1;
+      }
+      53% {
+        content: "";
+        transform: translateX(calc((475 + 5) * 1px));
+        opacity: 1;
+      }
+      56% {
+        content: "";
+        transform: translateX(calc((500 + 5) * 1px));
+        opacity: 1;
+      }
+      69% {
+        content: "";
+        transform: translateX(calc((525 + 5) * 1px));
+        opacity: 1;
+      }
+      72% {
+        content: "";
+        transform: translateX(calc((550 + 5) * 1px));
+        opacity: 1;
+      }
+      75% {
+        content: "";
+        transform: translateX(calc((575 + 5) * 1px));
+        opacity: 1;
+      }
+      78% {
+        content: "";
+        transform: translateX(calc((600 + 5) * 1px));
+        opacity: 0;
+      }
+      85% {
+        content: "";
+        transform: translateX(calc((600 + 5) * 1px));
+        opacity: 1;
+      }
+      90% {
+        content: "";
+        transform: translateX(calc((600 + 5) * 1px));
+        opacity: 0;
+      }
+      95% {
+        content: "";
+      }
+      100% {
+        content: "";
+        transform: translateX(605px);
+      }
+    }
+
+    @keyframes blink {
+      0% {
+        opacity: 1;
+      }
+      50% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+    </style>
+  </head>
+  <body>
+    <div>
+      <p>Hidden files around?</p>
+    </div>
+    
+  </body>
+</html>
